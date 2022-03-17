@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imersão Dev Alura - Aula 04</title>
+    <style>
+      body {
+        font-family: "Roboto Mono", monospace;
+        text-align: center;
+        background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png");
+        background-color: #000000;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+      .container {
+        text-align: center;
+        padding: 20px;
+      }
+      .page-title {
+        color: #ffffff;
+        margin: 0 0 5px;
+      }
+      .page-subtitle {
+        color: #ffffff;
+        margin-top: 5px;
+      }
+      .page-logo {
+        width: 200px;
+      }
+      .alura-logo {
+        width: 40px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      body > img {
+        margin: 0 10px;
+      }
+      img {
+        max-height: 250px;
+      }
+      h2 {
+        color: #ffffff;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">Aluraflix</h1>
+      <img
+        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg"
+        class="page-logo"
+        alt=""
+      />
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+      <img
+        src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
+        alt=""
+        class="alura-logo"
+      />
+    </a>
+    <script>
+      var filmes = [
+        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/f1f881062c7307c1f1c289ef5df5ee7e650214ec7e03deced3cf9c19e1c2ac25._RI_V_TTW_.jpg",
+        "https://br.web.img3.acsta.net/medias/nmedia/18/90/95/96/20122166.jpg",
+        "https://i.ytimg.com/vi/WwW1nqV3pI0/movieposter_en.jpg",
+        "https://static.wikia.nocookie.net/velozes-e-furiosos/images/a/aa/Velozes_e_Furiosos_-_Capa.jpg/revision/latest/top-crop/width/360/height/450?cb=20180305235641&path-prefix=pt-br",
+      ];
+
+      filmes_90 = [
+        "https://upload.wikimedia.org/wikipedia/pt/8/85/TheTrumanShow.jpg",
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzBR9jxBCtIUdkl_GR8BTTyeQfXuuw6YjQzSkt6nevUkur2KX9",
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYRBqoglvtG2D3d3gqKx51vXI4_mfY4pwly2GYug0iLYHRi5Ud",
+        "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnwVVMYsTzeZ8A6UEOvfFk4SC5FHSvT4EA_RiNaV4vyiJNjmlr",
+        "https://br.web.img3.acsta.net/medias/nmedia/18/90/18/85/20085012.jpg",
+        "https://assetsgn.nowonline.com.br/assets/p19140_v_v8_ai.jpg",
+      ];
+
+      document.write("<h2>Recomendados</h2>");
+      for (const filme of filmes) {
+        document.write(`<img src="${filme}">`);
+      }
+
+      document.write("<h2>Anos 90</h2>");
+      for (const filme of filmes_90) {
+        document.write(`<img src="${filme}">`);
+      }
+    </script>
+  </body>
+</html>
